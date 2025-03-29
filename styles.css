@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color:rgb(4, 78, 70);
+    margin-bottom: 20px;
+}
+
+input {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: blueviolet;
+    color:white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+@keyframes piscar {
+
+    /* texto piscando*/
+
+    0% { color: black; }  /* Texto visível */
+    50% { color: transparent; } /* Texto invisível */
+    100% { color: black; }  /* Texto visível novamente */
+
+    /* A caixa e o texto psicando juntos
+    
+    /*  0% { opacity: 1; } /* Totalmente visível */
+    /*  50% { opacity: 0; } /* Invisível */
+    /*  100% { opacity: 1; } /* Visível novamente */
+
+
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: burlywood;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    animation: piscar 1s infinite;  /* Animação piscando a cada 1 segundo */
+}
+
+#taxa-info {
+    margin-top: 15px;
+    font-size: 14px;
+    color:#666;
+}
