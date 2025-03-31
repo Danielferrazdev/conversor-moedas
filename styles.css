@@ -1,18 +1,40 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+    background-image: url("https://images.unsplash.com/photo-1550565118-3a14e8d0386f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ocupa a tela toda */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0;
+}
+
+.container {
+    /*background: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    background-color: rgba(33, 32, 32, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
     text-align: center;
+    width: 600px;
+    margin: 0 auto;  /*bizu: margin: 0 (não meche em nada, e o auto ele centraliza)*/
+    padding: 30px;
+    border-radius: 10px;
 }
 
 h1 {
-    color:rgb(4, 78, 70);
-    margin-bottom: 20px;
+    color:rgb(255, 255, 255);
+    margin-bottom: 30px;
+   
+}
+
+label {
+    color:rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 input {
-    width: 40%;
+    width: 74%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -21,37 +43,41 @@ input {
 }
 
 button {
-    background-color: blueviolet;
+    background-color: rgb(7, 177, 118);
     color:white;
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    font-weight: bold;
+    width: 40%;
+}
+
+button:hover {
+    background-color: rgb(7, 104, 41);
 }
 
 @keyframes piscar {
 
     /* texto piscando*/
 
-    0% { color: black; }  /* Texto visível */
+    0% { color: rgb(40, 255, 7); }  /* Texto visível */
     50% { color: transparent; } /* Texto invisível */
-    100% { color: black; }  /* Texto visível novamente */
+    100% { color: rgb(255, 255, 255); }  /* Texto visível novamente */
 
     /* A caixa e o texto psicando juntos
     
     /*  0% { opacity: 1; } /* Totalmente visível */
     /*  50% { opacity: 0; } /* Invisível */
     /*  100% { opacity: 1; } /* Visível novamente */
-
-
 }
 
 #resultado {
+    
     margin-top: 20px;
     padding: 15px;
-    background-color: burlywood;
+    background-color: rgb(2, 74, 27);
     border-radius: 4px;
     font-size: 18px;
     font-weight: bold;
@@ -61,5 +87,6 @@ button {
 #taxa-info {
     margin-top: 15px;
     font-size: 14px;
-    color:#666;
+    color:#ddd;
+    font-weight: bold;
 }

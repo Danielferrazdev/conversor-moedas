@@ -6,5 +6,5 @@ function converter() {
     let valoremdolar = valoremreal / valordodia
 
     
-    resultado.innerHTML = " O valor em Dólar é: U$" + valoremdolar
+    resultado.innerHTML = " O valor em Dólar é:<br> U$ " + valoremdolar.toFixed(2)
 }

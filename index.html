@@ -9,15 +9,18 @@
 </head>
 
 <body>
-    <h1>Conversor de Reais para Dólar</h1>
+    <div class="container">
+        <h1>Conversor de Reais para Dólar</h1>
+        <label for="valor">Digite o valor em reais (R$):</label>
+        <input type="number" id="valor" placeholder="Exemplo 100">
 
-    <label for="valor">Digite o valor em reais (R$):</label>
-    <input type="number" id="valor" placeholder="Exemplo 100">
+        <button onclick="converter()">CLIQUE AQUI PARA CONVERTER</button>
 
-    <button onclick="converter()">Converter para DóLAR</button>
+        <div id="resultado">O valor em Dólar aparecerá aqui</div>
+        <div id="taxa-info">Taxa atual: 1 Dólar = 4 Reais</div>
+    </div>
 
-    <div id="resultado">O valor em Dólar aparecerá aqui</div>
-    <div id="taxa-info">Taxa atual: 1 Dólar = 4 Reais</div>
+
 </body>
 <script src="script.js"></script>
 
