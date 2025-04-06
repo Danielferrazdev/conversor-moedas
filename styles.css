@@ -90,3 +90,19 @@ button:hover {
     color:#ddd;
     font-weight: bold;
 }
+.mensagem-erro {
+    display: none;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffdddd;
+    color: #d8000c;
+    padding: 20px 30px;
+    border: 1px solid #d8000c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+}

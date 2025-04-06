@@ -3,12 +3,21 @@ function converter() {
     let valoremreal = document.getElementById("valor").value
     let valordodia = 4
     
-    if (isNaN(valoremreal) || valoremreal <= 0) { 
-        /* isNaN - Impede que o usuário insira um valor inválido */
-        alert ("Por favor, digitar um valor válido em Real");
+    if (isNaN(valoremreal) || valoremreal <= 0) {
+        // Mostra a mensagem na tela
+        const erro = document.getElementById('mensagemErro');
+        erro.style.display = 'block';
+    
+        // Oculta depois de alguns segundos (opcional)
+        setTimeout(() => {
+            erro.style.display = 'none';
+        }, 3000); // Esconde após 3 segundos
+    
         return;
     }
+    
 
+    
     let valoremdolar = valoremreal / valordodia
 
     
